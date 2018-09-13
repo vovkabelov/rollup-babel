@@ -1,11 +1,7 @@
 const babel = require('@babel/core');
 const path = require('path');
 
-const defaultOptions = {
-	presets: [path.resolve(__dirname, './node_modules/@babel/preset-env')],
-	plugins: [path.resolve(__dirname, './node_modules/@babel/plugin-external-helpers')],
-	sourceMaps: true
-};
+const defaultOptions = {};
 
 const caller = {
 	name: 'rollup-babel',

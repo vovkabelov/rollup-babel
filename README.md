@@ -34,17 +34,5 @@ Example:
         ]
         ...
     }
-
-### Default options 
-    import babel from 'rollup-plugin-simple-babel';
-            
-    module.exports = {
-        ...
-        plugins: [
-            babel({
-                presets: ['@babel/preset-env'],
-                plugins: ['@babel/plugin-external-helpers']
-            })
-        ]
-        ...
-    }
+    
+By default Babel calls without options 
