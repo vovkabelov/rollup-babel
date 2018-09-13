@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-simple-babel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Babel for Rollup",
   "main": "index.js",
   "scripts": {
