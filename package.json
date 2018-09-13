@@ -1,0 +1,30 @@
+{
+  "name": "rollup-babel",
+  "version": "1.0.0",
+  "description": "Babel for Rollup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vovkabelov/rollup-babel.git"
+  },
+  "keywords": [
+    "babel",
+    "rollup",
+    "rollup-plugin",
+    "rollup-babel"
+  ],
+  "author": "Vadimir Belov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vovkabelov/rollup-babel/issues"
+  },
+  "homepage": "https://github.com/vovkabelov/rollup-babel#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/plugin-external-helpers": "^7.0.0",
+    "@babel/preset-env": "^7.0.0"
+  }
+}
