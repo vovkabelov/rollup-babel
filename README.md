@@ -1,14 +1,14 @@
-# rollup-babel
+# rollup-plugin-simple-babel
 Simple and awesome Babel plugin for rollup 
 
 ## Install via NPM 
-    npm install rollup-babel --save-dev
+    npm install rollup-plugin-simple-babel --save-dev
     
 ## Install via Yarn 
-    yarn add rollup-babel --dev
+    yarn add rollup-plugin-simple-babel --dev
     
 ## Use
-    import babel from 'rollup-babel';
+    import babel from 'rollup-plugin-simple-babel';
     
     module.exports = {
         ...
@@ -23,7 +23,7 @@ This plugin supported all [Babel options](https://babeljs.io/docs/en/options)
 
 Example: 
 
-    import babel from 'rollup-babel';
+    import babel from 'rollup-plugin-simple-babel';
         
     module.exports = {
         ...
@@ -36,7 +36,7 @@ Example:
     }
 
 ### Default options 
-    import babel from 'rollup-babel';
+    import babel from 'rollup-plugin-simple-babel';
             
     module.exports = {
         ...
