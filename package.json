@@ -1,10 +1,12 @@
 {
   "name": "rollup-plugin-simple-babel",
   "version": "1.0.3",
-  "description": "Babel for Rollup",
+  "description": "Babel plugin for Rollup",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "cover": "istanbul cover ./node_modules/mocha/bin/_mocha"
   },
   "repository": {
     "type": "git",
@@ -13,16 +15,24 @@
   "keywords": [
     "babel",
     "rollup",
+    "plugin",
     "rollup-plugin",
     "rollup-babel"
   ],
   "author": "Vadimir Belov",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vovkabelov/rollup-plugin-simple-babel/issues"
+    "url": "https://github.com/vovkabelov/rollup-plugin-simple-babel/issues",
+    "email": "i@vovkabelov.ru"
   },
   "homepage": "https://github.com/vovkabelov/rollup-plugin-simple-babel#readme",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.0.1"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "mocha-lcov-reporter": "^1.3.0"
   }
 }

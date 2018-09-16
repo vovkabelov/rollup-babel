@@ -1,5 +1,4 @@
 const babel = require('@babel/core');
-const path = require('path');
 
 const defaultOptions = {};
 
@@ -10,7 +9,7 @@ const caller = {
 };
 
 module.exports = options => {
-	options = Object.assign({}, defaultOptions, options, {caller});
+	options = Object.assign({}, defaultOptions, options || {}, {caller});
 
 	return {
 		name: 'rollup-babel',
